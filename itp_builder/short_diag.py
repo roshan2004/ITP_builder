@@ -18,5 +18,5 @@ def short_diag_bond(new_list):
             
     
     for index1, index2 in zip(short_diag_1, short_diag_2):
-        return(f"{i}    {j}    0.53627")
+        print(f"{i}    {j}    0.53627")
     
