@@ -1,7 +1,8 @@
 def virtual_site1(new_list):
-    for i in range(len(new_list[i])):
-        if len(new_list[i][j]) == 3:
-            print(new_list[i][j][1], 1 , new_list[i][j][0], new_list[i][j][2], sep = '    ')
+    for i in range(len(new_list)):
+        for j in range(len(new_list[i])):
+            if len(new_list[i][j]) == 3:
+                print(new_list[i][j][1], 1 , new_list[i][j][0], new_list[i][j][2], sep = '    ')
             
 
 def virtual_site2(list_of):
