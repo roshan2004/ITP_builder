@@ -1,4 +1,4 @@
-def main_dihedral(new_list):
+def main_dihedral(new_list, f):
     first = []
     second = []
     for i in range(len(new_list)-1):
@@ -16,5 +16,5 @@ def main_dihedral(new_list):
                 second.append(m[::-1])
                 
     for i, j in zip(first, second):
-        print(*i, *j, 180, sep = '    ')
+        f.write(f'{i[0]:4}{i[1]:4}{j[0]:4}{j[1]:4}{2:4}{180:4}{400:4}\n')
             

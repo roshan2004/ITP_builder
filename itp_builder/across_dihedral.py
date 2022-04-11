@@ -1,4 +1,4 @@
-def across_dihedral(new_list):
+def across_dihedral(new_list, f):
     a_list = []
     b_list = []
     middle1 = []
@@ -28,5 +28,5 @@ def across_dihedral(new_list):
             
             
     for i, j in zip(a_list, b_list):
-        print(*i, *j, 180, sep = "    ")
+        f.write(f'{i[0]:4}{i[1]:4}{j[0]:4}{j[1]:4}{2:4}{180:4}{400:4}\n')
     
