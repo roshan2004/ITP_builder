@@ -1,5 +1,5 @@
 from grouping import regroup
-def exclusions(list_of):
+def exclusions(list_of, f):
     for_excl = []
     for i in list_of:
         for_excl.append(regroup(i))
